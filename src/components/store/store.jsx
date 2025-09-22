@@ -271,7 +271,7 @@ const Store = ({ addToCart }) => {
                       <span className="fw-bold text-success">{plant.cost}</span>
                       {!inCart[plant.name] ? (
                         <button
-                          className="btn btn-sm btn-primary"
+                          className="btn btn-sm btn-primary w-auto"
                           onClick={() => {
                             dispatch(addItem(plant));
                             Swal.fire({
@@ -286,7 +286,7 @@ const Store = ({ addToCart }) => {
                         </button>
                       ) : (
                         <button
-                          className="btn btn-sm btn-danger"
+                          className="btn btn-sm btn-danger w-auto"
                           onClick={() => {
                             dispatch(removeItem(plant));
                             Swal.fire({

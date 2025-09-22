@@ -3,3 +3,34 @@ button img {
   width: 70px;
   border-radius: 70%;
 }
+/* Shrink logo and title on small screens */
+.header-logo {
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
+
+.header-title {
+  font-size: 1.5rem; /* fs-4 default */
+}
+
+@media (max-width: 375px) {
+  .header-logo {
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+  }
+
+  .header-title {
+    font-size: 1rem; /* smaller brand text */
+  }
+
+  /* Prevent navbar wrapping */
+  .navbar .container {
+    flex-wrap: nowrap;
+  }
+
+  .navbar-nav {
+    margin-top: 0 !important;
+  }
+}

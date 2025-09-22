@@ -37,7 +37,7 @@ const GetStarted = () => {
     >
       <div className="row w-100">
         <div className="col-12">
-          <h1 className="m-4 text-light display-4 display-md-3 display-lg-2">
+          <h1 className="m-4 text-light display-4 display-md-3 display-lg-2 my-3">
             Welcome To Paradise Nursery!
           </h1>
         </div>
@@ -57,7 +57,7 @@ const GetStarted = () => {
         </div>
 
         <div className="col-12 fs-6 fs-md-5">
-          <p className="mb-4 text-light">
+          <p className="mb-2 text-light">
             Join us in our mission to create a greener, healthier world. Visit
             Paradise Nursery today and experience the beauty of nature right at
             your doorstep.
@@ -66,7 +66,7 @@ const GetStarted = () => {
 
         <div className="col-12">
           <button
-            className="btn btn-primary btn-lg my-4 w-75 w-md-50 w-lg-25"
+            className="btn btn-primary btn-lg my-2 w-75 w-md-50 w-lg-25"
             onClick={handleGetStarted}
           >
             Get Started

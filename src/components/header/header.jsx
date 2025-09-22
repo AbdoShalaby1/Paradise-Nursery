@@ -6,7 +6,8 @@ import { useSelector } from "react-redux";
 const Header = () => {
   const { setShowHero } = usePage();
   const { switchView } = useView();
-  const cartItems = useSelector(state => state.cart.items)
+  const cartItems = useSelector((state) => state.cart.items);
+
   const goHome = () => {
     switchView("store");
     setShowHero(true);
@@ -23,18 +24,18 @@ const Header = () => {
         zIndex: 1050,
       }}
     >
-      <div className="container">
+      <div className="container d-flex flex-nowrap align-items-center justify-content-between">
         {/* Brand */}
         <button
-          className="btn btn-link d-flex align-items-center text-decoration-none me-3"
+          className="btn btn-link d-flex align-items-center text-decoration-none p-0"
           onClick={goHome}
         >
           <img
             src="https://cdn.pixabay.com/photo/2020/08/05/13/12/eco-5465432_1280.png"
             alt="logo"
-            style={{ height: "40px", width: "40px", marginRight: "10px" }}
+            className="header-logo"
           />
-          <h2 className="m-0 fs-4">Paradise Nursery</h2>
+          <h2 className="m-0 header-title">Paradise Nursery</h2>
         </button>
 
         {/* Hamburger toggle */}
@@ -75,7 +76,6 @@ const Header = () => {
                 }}
               >
                 🛒 Cart
-                {/* Badge */}
                 <span
                   className="badge rounded-pill bg-success ms-1"
                   style={{ fontSize: "0.7rem", lineHeight: "1" }}
