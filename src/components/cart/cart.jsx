@@ -70,6 +70,7 @@ const CartPage = () => {
                 className="card-img-top"
                 alt={item.name}
                 style={{ height: "180px", objectFit: "cover" }}
+                loading="lazy"
               />
               <div className="card-body d-flex flex-column justify-content-between">
                 <div>
