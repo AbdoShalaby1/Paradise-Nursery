@@ -103,7 +103,7 @@ const CartPage = () => {
                     ).toFixed(2)}
                   </strong>
                   <button
-                    className="btn btn-sm btn-danger"
+                    className="btn btn-sm btn-danger w-auto"
                     onClick={() => handleRemove(item)}
                   >
                     Remove

@@ -32,7 +32,7 @@ const GetStarted = () => {
 
   return (
     <div
-      className="flex-grow-1 d-flex justify-content-center align-items-center text-center px-3"
+      className="d-flex justify-content-center align-items-center text-center px-3"
       style={{ paddingTop: "70px", minHeight: "calc(100vh - 70px)" }}
     >
       <div className="row w-100">
