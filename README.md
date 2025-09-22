@@ -1,12 +1,33 @@
-# React + Vite
+# Paradise Nursery 🌿
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Paradise Nursery** is a simple and interactive plant shop frontend built with **React**. This project is created purely for learning purposes—there’s no backend, just a way to practice modern React concepts.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Browse a variety of plants with images, names, prices, and short descriptions.  
+- Add plants to a shopping cart.  
+- Manage cart state globally using **React Context (`useContext`)** and **Redux**.  
+- Local component state handled with **`useState`**.  
+- Responsive layout and modern card design.  
+- Smooth scrolling and dynamic UI interactions.  
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend:** React  
+- **State Management:** useState, useContext, Redux  
+- **Styling:** CSS / Bootstrap
+
+## Purpose
+
+This project is aimed at practicing:
+
+- React component structure and props.  
+- State management techniques.  
+- Handling user interactions and dynamic UI updates.  
+- Responsive design in React.  
+
+> **Note:** This is a learning project with no backend or database. All data is stored in memory.  
+
+---
+
+Feel free to explore the code and experiment with React features! 🌱
