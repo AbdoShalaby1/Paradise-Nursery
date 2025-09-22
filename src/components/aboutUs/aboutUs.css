@@ -1,0 +1,19 @@
+.bgImg {
+  position: relative;
+  background-image: url("https://4kwallpapers.com/images/walls/thumbs_3t/3559.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.bgImg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 0; /* put overlay behind */
+}
+
+.bgImg > * {
+  position: relative;
+  z-index: 1; /* put text above overlay */
+}
