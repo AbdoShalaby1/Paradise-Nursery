@@ -27,8 +27,8 @@ function App() {
         <Header />
         {showHero && (
           <div
-            className="container-fluid p-0 vh-100 vw-100 d-flex flex-column"
-            id="home"
+            className="container-fluid p-0 d-flex flex-column"
+            style={{ paddingTop: "100px", minHeight: "100vh" }}
           >
             <GetStarted />
           </div>

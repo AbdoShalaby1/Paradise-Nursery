@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://abdoshalaby1.github.io/Paradise-Nursery/",
   "scripts": {
     "dev": "vite",
     "deploy": "gh-pages -d dist",

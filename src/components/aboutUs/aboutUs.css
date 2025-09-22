@@ -17,3 +17,23 @@
   position: relative;
   z-index: 1; /* put text above overlay */
 }
+
+@media (max-width: 375px) {
+  h1 {
+    font-size: 1.8rem; /* smaller heading */
+  }
+
+  p {
+    font-size: 0.9rem; /* smaller paragraph */
+  }
+
+  button {
+    width: 90%; /* fill more horizontal space */
+    font-size: 0.9rem; /* smaller button text */
+  }
+
+  .lead {
+    font-size: 0.9rem !important; /* smaller font */
+    line-height: 1 !important; /* keep lead spacing */
+  }
+}

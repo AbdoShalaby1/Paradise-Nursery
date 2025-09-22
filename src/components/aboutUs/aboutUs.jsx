@@ -1,18 +1,40 @@
 import "./aboutUs.css";
 import { usePage } from "../states/hero";
 import { useView } from "../states/storeCart";
+import { useEffect, useState } from "react";
 
 const GetStarted = () => {
   const { setShowHero } = usePage();
   const { switchView } = useView();
+  const [fontSize, setFontSize] = useState("1.25rem"); // default lead size
+  const [lineHeight, setLineHeight] = useState(1.6);
 
   const handleGetStarted = () => {
     setShowHero(false);
     switchView("store");
   };
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 375) {
+        // iPhone SE and similar
+        setFontSize("0.9rem");
+        setLineHeight(1.4);
+      } else {
+        setFontSize("1.25rem");
+        setLineHeight(1.6);
+      }
+    };
+
+    handleResize(); // run once on mount
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
-    <div className="flex-grow-1 d-flex justify-content-center align-items-center text-center px-3 min-vh-100">
+    <div
+      className="flex-grow-1 d-flex justify-content-center align-items-center text-center px-3"
+      style={{ paddingTop: "70px", minHeight: "calc(100vh - 70px)" }}
+    >
       <div className="row w-100">
         <div className="col-12">
           <h1 className="m-4 text-light display-4 display-md-3 display-lg-2">
@@ -20,8 +42,11 @@ const GetStarted = () => {
           </h1>
         </div>
 
-        <div className="col-12 fs-5 fs-md-4">
-          <p className="lead mb-4 text-light">
+        <div className="col-12 fs-6 fs-md-4">
+          <p
+            className="lead mb-4 text-light"
+            style={{ fontSize: fontSize, lineHeight: lineHeight }}
+          >
             At Paradise Nursery, we are passionate about bringing nature closer
             to you. Our mission is to provide a wide range of high-quality
             plants that not only enhance the beauty of your surroundings but
